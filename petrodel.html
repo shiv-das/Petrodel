@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETRODEL</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+
+    <!-- Load Esri Leaflet from CDN -->
+    <script
+      src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
+      integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
+      crossorigin=""
+    ></script>
+
+    <!-- Load Esri Leaflet Geocoder from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.css"
+      integrity="sha512-v5YmWLm8KqAAmg5808pETiccEohtt8rPVMGQ1jA6jqkWVydV5Cuz3nJ9fQ7ittSxvuqsvI9RSGfVoKPaAJZ/AQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js"
+      integrity="sha512-zdT4Pc2tIrc6uoYly2Wp8jh6EPEWaveqqD3sT0lf5yei19BC1WulGuh5CesB0ldBKZieKGD7Qyf/G0jdSe016A=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="petrodel.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--<main class="log">
+        <div class="headerr">
+          <div class="title float">
+            <h1 style="text-align: center">Petrodel</h1>
+          </div>
+          <img src="petrol.jpeg" class="logo" />
+        </div>
+        <div class="login-img"><img src="petr.jpeg" class="imge" /></div>
+        <div class="login">
+          <label for="username">UserName:</label
+          ><input type="text" class="loggin" /> <br />
+          <br />
+          <label for="username">Password:</label
+          ><input type="text" class="loggin" /> <br /><br />
+          <button class="login__btn button2" style="vertical-align: middle">
+            <span>Login</span>
+          </button>
+        </div>
+      </main>-->
+      <main class="app">
+        <div class="headerr">
+          <div class="title">
+            <div class="back">
+              <button class="backto" style="vertical-align: middle">
+                <span>Back to Login</span>
+              </button>
+            </div>
+            <div class="tit">
+              <h1 style="text-align: center; float: left">Petrodel</h1>
+              <img src="petrol.jpeg" class="logo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="petrolheading">
+          <div class="heading"><h1>Petrol</h1></div>
+          <div class="heading"><h1>Diesel</h1></div>
+        </div>
+        <div class="petrolpump">
+          <div class="image">
+            <img src="pump.jpg" class="prop" />
+            <div style="font-family: 'Orbitron', sans-serif" class="price">
+              106.72 &#8377;/L
+            </div>
+            <div style="font-family: 'Orbitron', sans-serif" class="name">
+              PETROL
+            </div>
+          </div>
+          <div class="image">
+            <img src="pump.jpg" class="prop" />
+            <div style="font-family: 'Orbitron', sans-serif" class="price">
+              100.32 &#8377;/L
+            </div>
+            <div style="font-family: 'Orbitron', sans-serif" class="name">
+              DIESEL
+            </div>
+          </div>
+        </div>
+        <div class="order">
+          <div class="order-det">
+            <label for="fname">Number of Litres.</label
+            ><input type="number" class="input" id="petlit" /> <br /><br />
+            <label for="fname">Amount:</label
+            ><input type="number" class="input-amt" id="petamt" />
+            <br /><br /><button type="button" id="petcalc" class="calc">
+              <span>Calculate</span>
+            </button>
+          </div>
+          <div class="order-det">
+            <label for="fname">Number of Litres.</label
+            ><input type="number" class="input" id="dielit" /> <br /><br />
+            <label for="fname">Amount:</label
+            ><input type="number" class="input-amt" id="dieamt" />
+            <br /><br /><button type="button" id="diecalc" class="calc">
+              <span>Calculate</span>
+            </button>
+          </div>
+        </div>
+        <div class="address">
+          <label for="fname">Address:</label
+          ><input type="text" class="address-btn" />
+          <button type="button" id="curr_loc">
+            <span>Use my Current Location</span>
+          </button>
+        </div>
+        <div class="order-btn">
+          <input
+            type="submit"
+            name="Order NOW!"
+            value="Order Now!"
+            class="orderbtn"
+          />
+        </div>
+      </main>
+    </div>
+    <script src="petrodel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Copperplate, Papyrus, fantasy;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+}
+.title {
+  text-align: center;
+  font-size: 2vw;
+  width: 100%;
+  margin-left: -2vw;
+}
+.float {
+  float: inline-start;
+}
+.logo {
+  max-width: 50%;
+  max-height: 50%;
+  height: 4vw;
+  width: 4vw;
+  float: left;
+  margin-top: -6vw;
+  margin-left: 57.6vw;
+}
+.headerr {
+  height: 9vw;
+  width: 100%;
+  text-align: center;
+}
+.form {
+  height: 30vw;
+  font-size: 2vw;
+  border: 1px solid black;
+  border-style: dotted;
+  margin-left: 26vw;
+  margin-right: 23vw;
+}
+.formfill {
+  padding-top: 3vw;
+  padding-left: 11vw;
+}
+.sub {
+  padding-left: 25vw;
+  padding-top: 3vw;
+}
+.sube {
+  transition: all 0.5s;
+
+  border-radius: 4vw;
+  height: 2vw;
+  margin-top: 0.8vw;
+  float: left;
+  background-color: aquamarine;
+  font-size: 1.4vw;
+}
+.sube:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.sube span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.sube span:after {
+  content: '\2713';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2.6vw;
+  transition: 0.5s;
+}
+.sube:hover span {
+  padding-right: 1.4vw;
+}
+.sube:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.subt {
+  padding-left: 18vw;
+  padding-top: 7vw;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2vw;
+}
+.subet {
+  transition: all 0.5s;
+
+  border: none;
+  height: 2vw;
+  margin-top: 0.8vw;
+  float: left;
+  background-color: aquamarine;
+  font-size: 1.4vw;
+}
+.subet:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.subet span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.subet span:after {
+  content: '\00BB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2.6vw;
+  transition: 0.5s;
+}
+.subet:hover span {
+  padding-right: 1.4vw;
+}
+.subet:hover span:after {
+  opacity: 1;
+  right: 0;
+}

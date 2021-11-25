@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Copperplate, Papyrus, fantasy;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+}
+.title {
+  text-align: center;
+  font-size: 2vw;
+  width: 100%;
+  margin-left: -2vw;
+}
+.float {
+  float: left;
+}
+.logo {
+  max-width: 50%;
+  max-height: 50%;
+  height: 4vw;
+  width: 4vw;
+  float: left;
+  margin-top: -6vw;
+  margin-left: 57.6vw;
+}
+.headerr {
+  height: 9vw;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  main {
+    flex-wrap: nowrap;
+  }
+
+  div {
+    flex-basis: 33%;
+  }
+}
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  transition: all 0.5s;
+}
+.heading {
+  width: 50%;
+  height: 8vw;
+  float: left;
+
+  text-align: center;
+  font-size: 2vw;
+}
+.petrolheading {
+  height: 8vw;
+}
+.petrolpump {
+  height: 40vw;
+}
+.image {
+  float: left;
+  width: 50%;
+  height: 40vw;
+
+  position: relative;
+}
+.prop {
+  height: 38vw;
+  width: 100%;
+}
+.price {
+  top: 5vw;
+  right: 24vw;
+  position: absolute;
+  font-size: 2.5vw;
+}
+.name {
+  right: 25vw;
+  top: 9vw;
+  position: absolute;
+  font-size: 2.5vw;
+}
+.input {
+  height: 3vw;
+  width: 14vw;
+  font-size: 2vw;
+}
+.order {
+  height: 13vw;
+}
+.order-det {
+  width: 50%;
+  height: 11vw;
+  float: left;
+
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'Times New Roman', Times, serif;
+}
+.input-amt {
+  height: 3vw;
+  width: 14vw;
+  font-size: 2vw;
+  margin-left: 7.5vw;
+}
+.order-btn {
+  height: 8vw;
+}
+.orderbtn {
+  width: 19vw;
+  height: 5vw;
+  margin-left: 41vw;
+  font-size: 3vw;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+.address {
+  height: 8vw;
+  font-size: 2vw;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.address-btn {
+  height: 6vw;
+  width: 30vw;
+  font-size: 1.5vw;
+  font-family: 'Times New Roman', Times, serif;
+  overflow-wrap: break-word;
+}
+.login {
+  height: 15vw;
+
+  padding: 3vw;
+  text-align: center;
+  font-size: x-large;
+}
+.loggin {
+  margin-left: 1vw;
+  padding-left: 1vw;
+}
+.login-img {
+  height: 27vw;
+  width: 50%;
+
+  margin-left: 25%;
+}
+.imge {
+  height: 27vw;
+  width: 49.5vw;
+}
+.login__btn {
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+  font-size: 2vw;
+  height: 2vw;
+  font-family: Copperplate, Papyrus, fantasy;
+  background-color: aquamarine;
+}
+
+.app {
+  display: grid;
+
+  /* NOTE This creates the fade in/out anumation */
+  opacity: 1;
+  transition: all 1s;
+}
+.log {
+  transition: all 1s;
+}
+.hidden {
+  display: none;
+}
+@font-face {
+  font-family: 'digital-clock-font';
+  src: url('put_the_location_to_your_font.ttf or .otf');
+}
+
+.button2:hover {
+  box-shadow: 0 1.2vw 2vw 0 rgba(0, 0, 0, 0.24),
+    0 2.1vw 6.1vw 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2.6vw;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 3vw;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#curr_loc {
+  transition: all 0.5s;
+  border: none;
+  background-color: aquamarine;
+}
+#curr_loc:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#curr_loc span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#curr_loc span:after {
+  content: '\2316';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2.6vw;
+  transition: 0.5s;
+}
+
+#curr_loc:hover span {
+  padding-right: 3vw;
+}
+
+#curr_loc:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.back {
+  width: 20%;
+  margin-left: -5vw;
+  float: left;
+}
+.tit {
+  width: 80%;
+  float: left;
+  padding-left: 23vw;
+}
+.backto {
+  transition: all 0.5s;
+  border: none;
+  height: 2vw;
+  margin-left: 0;
+  background-color: aquamarine;
+}
+.backto:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.backto span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.backto span:after {
+  content: '\226A';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2.6vw;
+  transition: 0.5s;
+}
+
+.backto:hover span {
+  padding-right: 1.4vw;
+}
+
+.backto:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.newacc {
+  width: 100%;
+  height: 5vw;
+  padding-left: 40vw;
+}
+.new_acc {
+  transition: all 0.5s;
+  border: none;
+  height: 2vw;
+  margin-top: 0.8vw;
+  float: left;
+  background-color: aquamarine;
+  font-size: 1.4vw;
+}
+.new_acc:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.new_acc span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.new_acc span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2.6vw;
+  transition: 0.5s;
+}
+.new_acc:hover span {
+  padding-right: 1.4vw;
+}
+.new_acc:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.dont {
+  float: left;
+  font-size: 1.2vw;
+}
+.log {
+  height: 4vw;
+}
